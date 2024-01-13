@@ -16,9 +16,7 @@ class MainMeta(ormar.ModelMeta):
 class Task(ormar.Model):
 	class Meta(MainMeta):
 		pass
-
-
-
+		
 	id: int = ormar.Integer(primary_key=True)
 	task_name: str = ormar.String(max_length=50)
 	description: str = ormar.String(max_length=1000)
@@ -30,7 +28,7 @@ class Task(ormar.Model):
 class Files(ormar.Model):
 	class Meta(MainMeta):
 		pass
-
+		
 	id: int = ormar.Integer(primary_key=True)
 	title: str = ormar.String(max_length=50)
 	description: str = ormar.String(max_length=1000)
