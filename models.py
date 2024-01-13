@@ -6,11 +6,9 @@ from ormar import Date, DateTime
 from db import metadata, database
 
 
-
 class MainMeta(ormar.ModelMeta):
 	metadata = metadata
 	database = database
-
 
 
 class Task(ormar.Model):
@@ -22,7 +20,6 @@ class Task(ormar.Model):
 	description: str = ormar.String(max_length=1000)
 	creat_at: str = ormar.String(max_length=50)
 # item_create_date: datetime
-
 
 
 class Files(ormar.Model):
