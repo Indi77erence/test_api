@@ -29,5 +29,4 @@ class Files(ormar.Model):
 	title: str = ormar.String(max_length=50)
 	description: str = ormar.String(max_length=1000)
 	file: str = ormar.String(max_length=100)
-	# time: datetime = ormar.DateTime(pydantic_only=True, default=datetime.utcnow)
 	task: Union[Task, int, None] = ormar.ForeignKey(Task)
