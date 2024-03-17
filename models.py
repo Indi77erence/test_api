@@ -19,7 +19,6 @@ class Task(ormar.Model):
 	task_name: str = ormar.String(max_length=50)
 	description: str = ormar.String(max_length=1000)
 	creat_at: str = ormar.String(max_length=50)
-# item_create_date: datetime
 
 
 class Files(ormar.Model):
